@@ -1,3 +1,47 @@
 body{
     font-family: var(--font-primary);
+    margin: 0px;
+    background-color: var(--secondary-10);
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.ul-nav{
+    list-style: none;
+    padding-inline-start: 0px;
+    display: flex;
+    margin: 10px;
+}
+
+.li-nav{
+    text-decoration: none;
+}
+
+.link-nav{
+    text-decoration: none;
+    
+}
+
+.btn-text{
+    color: var(--primary-100);
+    text-transform: uppercase;
+}
+
+.accessibility-bar{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.btn-accessibility{
+    width: 30px;
+    height: 30px;
+    border: 2px solid var(--primary-100);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
