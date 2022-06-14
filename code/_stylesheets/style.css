@@ -4,11 +4,24 @@ body{
     background-color: var(--secondary-10);
 }
 
-.navbar{
+.d-flex{
     display: flex;
-    align-items: center;
+}
+
+.justify-content-center{
     justify-content: center;
 }
+
+.align-items-center{
+    align-items: center;
+}
+
+.d-grid{
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+}
+
+
 
 .ul-nav{
     list-style: none;

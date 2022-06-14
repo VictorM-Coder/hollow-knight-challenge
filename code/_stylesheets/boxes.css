@@ -1,20 +1,22 @@
 @media (max-width: 576px) {
-    body{
-        background-color: red;
+    .container{
+        padding-left: 15px;
+        padding-right: 15px;
     }
 }
 
 @media (min-width: 576px) {
-    body{
-        background-color: yellow ;
-    }
-    
+    .container{
+        padding-left: 30px;
+        padding-right: 30px;
+    } 
 }
 
 @media (min-width: 992px) {
-    body{
-        background-color: green ;
-    }
+    .container{
+        padding-left: 90px;
+        padding-right: 90px;
+    } 
 }
 
 
