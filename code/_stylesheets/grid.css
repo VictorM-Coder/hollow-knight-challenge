@@ -1,5 +1,5 @@
 @media (min-width: 992px) {
-    .d-grid{
+    .d-grid-footer{
         grid-template-columns: 1fr 3fr 1fr;
     }
 
@@ -14,6 +14,14 @@
     }    
 }
 
+.d-grid-section{
+    grid-template-columns: 1fr 1fr;
+}
+
 .d-grid{
     display: grid;
+}
+
+.align-items-center{
+    align-items: center;
 }

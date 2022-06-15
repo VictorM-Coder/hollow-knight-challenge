@@ -33,18 +33,23 @@ body{
 
 .link-nav{
     text-decoration: none;
-    
+}
+
+.btn-default{
+    background-color: var(--primary-30);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
 }
 
 .btn-text{
     color: var(--primary-100);
+    font: 500 var(--font-primary);
     text-transform: uppercase;
-}
-
-.accessibility-bar{
-    display: flex;
-    justify-content: end;
-    align-items: center;
+    letter-spacing: 0.8px;
 }
 
 .btn-accessibility{
@@ -55,4 +60,14 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.accessibility-bar{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.img-fluid{
+    max-height: 100%;
 }
