@@ -14,8 +14,20 @@
     }    
 }
 
-.d-grid-section{
-    grid-template-columns: 1fr 1fr;
+@media (min-width: 768px){
+    .d-grid-section{
+        grid-template-columns: 1fr 1fr;
+    } 
+}
+
+@media (max-width: 768px){
+    .row-image{
+        grid-row-start: 1;
+    }
+
+    .row-content{
+        grid-row-start: 2;
+    }
 }
 
 .d-grid{
