@@ -1,0 +1,19 @@
+@media (min-width: 992px) {
+    .d-grid{
+        grid-template-columns: 1fr 3fr 1fr;
+    }
+
+    .col-center{
+        grid-column-start: 2;
+        grid-column-end: 2;
+    }
+    
+    .col-end{
+        grid-column-start: 3;
+        grid-column-end: 3;
+    }    
+}
+
+.d-grid{
+    display: grid;
+}

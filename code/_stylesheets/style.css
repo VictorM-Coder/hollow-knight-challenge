@@ -12,16 +12,13 @@ body{
     justify-content: center;
 }
 
+.justify-content-end{
+    justify-content: end;
+}
+
 .align-items-center{
     align-items: center;
 }
-
-.d-grid{
-    display: grid;
-    grid-template-columns: 1fr 4fr 1fr;
-}
-
-
 
 .ul-nav{
     list-style: none;

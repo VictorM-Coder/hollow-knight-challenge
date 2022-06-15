@@ -1,5 +1,3 @@
-.twitter-icon{
-    color: var(--primary-100);
-    font-size: 1em;
-    src: url(../_images/twitter.svg);
+.icon{
+    font-size: 24px;
 }
