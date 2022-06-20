@@ -20,19 +20,25 @@ class Menu extends Component{
             link.innerHTML = value
 
             li.classList.add("li-nav")
-            link.classList.add("link-nav",  "btn-text")
+            link.classList.add("link-nav", "btn-text")
 
-            switch(this.type){
-                case "accessibility":
-                    li.classList.add("me-2",  "btn-accessibility")
-                    break
-                case "menu":
-                    li.classList.add("me-4")
-                    break
-                case "footer":
-                    li.classList.add("me-2")
-                    //adicionar criação com icons!!!
-                    break
+            if(index < array.length-1){
+                switch(this.type){
+                    case "accessibility":
+                        li.classList.add("me-2")
+                        break
+                    case "menu":
+                        li.classList.add("me-4")
+                        break
+                    case "footer":
+                        li.classList.add("me-2")
+                        //adicionar criação com icons!!!
+                        break
+                }
+            }
+
+            if(this.type == "accessibility"){
+                li.classList.add("btn-accessibility")
             }
 
             li.appendChild(link)
