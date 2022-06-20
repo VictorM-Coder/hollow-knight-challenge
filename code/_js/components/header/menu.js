@@ -1,4 +1,5 @@
 class Menu extends Component{
+    //centralizar os botões de acessibilidade
     constructor(content = ['item', 'item', 'item'], type){
         super()
         this.items = content
