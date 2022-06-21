@@ -7,7 +7,8 @@ class Section extends Component{
         this.title = document.createElement('h1')
         this.paragraph = document.createElement('p')
         this.button =  document.createElement('button')
-        this.icon = document.createElement('i')
+        this.icon = getIconFromBootstrap("steam")
+        this.span = document.createElement('span')
 
         this.imageDiv = document.createElement('div')
         this.image = document.createElement('img')
@@ -16,15 +17,17 @@ class Section extends Component{
         this.section.appendChild(this.imageDiv)
 
         this.imageDiv.appendChild(this.image)
+        this.image.src = content.imgURL
 
         this.card.appendChild(this.title)
         this.card.appendChild(this.paragraph)
         this.card.appendChild(this.button)
         this.button.appendChild(this.icon)
+        this.button.appendChild(this.span)
 
+        this.span.innerText = content.buttonText
         this.title.innerText = content.title
         this.paragraph.innerText = content.paragraph
-        this.button.innerText = content.buttonText
 
         this.stylizeComponents()
     }

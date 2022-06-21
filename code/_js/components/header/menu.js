@@ -7,10 +7,16 @@ class Menu extends Component{
 
         this.menu = document.createElement('menu')
         this.#addItems()
+
+        this.stylizeComponents()
     }
 
     getComponents(){
         return this.menu;
+    }
+
+    stylizeComponents(){
+        this.menu.classList.add("ul-nav")
     }
 
     #addItems(){
@@ -18,7 +24,13 @@ class Menu extends Component{
             let li = document.createElement('li')
             let link = document.createElement('a')
             
-            link.innerHTML = value
+            if(typeof(value) === "string"){
+                link.innerHTML = value
+            }else if(typeof(value) === "object"){
+                link.appendChild(value)
+            }
+            
+            console.log(value)
 
             li.classList.add("li-nav")
             link.classList.add("link-nav", "btn-text")
@@ -33,7 +45,6 @@ class Menu extends Component{
                         break
                     case "footer":
                         li.classList.add("me-2")
-                        //adicionar criação com icons!!!
                         break
                 }
             }
