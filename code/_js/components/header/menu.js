@@ -1,9 +1,10 @@
 class Menu extends Component{
     //centralizar os botões de acessibilidade
-    constructor(content = ['item', 'item', 'item'], type){
+    constructor(content = ['item', 'item', 'item'], type, ids){
         super()
         this.items = content
         this.type = type;
+        this.ids =ids
 
         this.menu = document.createElement('menu')
         this.#addItems()
@@ -30,7 +31,9 @@ class Menu extends Component{
                 link.appendChild(value)
             }
             
-            console.log(value)
+            if(this.ids != undefined){
+                link.id = this.ids[index]
+            }
 
             li.classList.add("li-nav")
             link.classList.add("link-nav", "btn-text")

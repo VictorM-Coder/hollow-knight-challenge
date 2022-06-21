@@ -6,7 +6,7 @@ class Header extends Component{
         this.nav = document.createElement('nav')
 
         let menuAcessbility = new Menu(["+a", "a", "-a"], "accessibility")
-        let menuPrincipal = new Menu(["Anúncios", "Home", "Sobre nós"], "menu")
+        let menuPrincipal = new Menu(["Anúncios", "Home", "Sobre nós"], "menu", ["adverts", "home", "about-us"])
     
         this.listAcessbility = menuAcessbility.getComponents()
         this.listMenu = menuPrincipal.getComponents()

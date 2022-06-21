@@ -14,3 +14,4 @@ body.appendChild(mainContainer)
 mainContainer.classList.add('container')
 
 body.appendChild(footer.getComponents())
+
