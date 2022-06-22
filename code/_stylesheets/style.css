@@ -76,6 +76,6 @@ body{
 }
 
 .img-fluid{
-    min-height: 100%;
+    max-width: 100%;
     max-height: 520px;
 }

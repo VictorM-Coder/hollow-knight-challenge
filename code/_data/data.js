@@ -4,7 +4,7 @@ const data = {
 
     advertsSection: new SectionContent("Explore mundos interconectados", "Faça parte da comunidade, encontre uma imensidão de amigos e evolua com novas habilidades", "_images/dark-knight.png", "entrar na comunidade", "discord"),
 
-    teamCherrySection: new SectionContent("Construindo mundos bizarros para você explorar", "Team cherry é um pequeno time de desenvolvimento independete de Adelaide, Austrália. O time é formado por apenas três pessoas que são resposáveis por tudo neste universo!", "", "visite o site oficial", "site"),
+    teamCherrySection: new SectionContent("Construindo mundos bizarros para você explorar", "Team cherry é um pequeno time de desenvolvimento independete de Adelaide, Austrália. O time é formado por apenas três pessoas que são resposáveis por tudo neste universo!", "_images/team-cherry-logo.png", "visite o site oficial", "site"),
 
-    leadSection: new SectionContent("Lead Mentoring", "Este site foi desenvolvido como parte de um desafio para o Lead Mentoring, visando implementar conceitos de desenvolvimento web e acessibilidade.", "", "conheça o lead", "lead")
+    leadSection: new SectionContent("Lead Mentoring", "Este site foi desenvolvido como parte de um desafio para o Lead Mentoring, visando implementar conceitos de desenvolvimento web e acessibilidade.", "_images/logo-lead.svg", "conheça o lead", "lead")
 }
