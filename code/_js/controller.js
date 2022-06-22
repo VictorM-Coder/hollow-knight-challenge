@@ -22,7 +22,7 @@ function changeSectionTo(type){
             newSection = new Section(data.homeSection)
             break
         case "adverts":
-            newSection = new Section(data.advertsSection)
+            newSection = new Section(data.advertsSection, true)
             break
         case "about-us":
             changeSectionToAboutUs()
@@ -34,8 +34,10 @@ function changeSectionTo(type){
 }
 
 function changeSectionToAboutUs(){
-    let sectionCherry = new Section(data.teamCherrySection)
+    let sectionCherry = new Section(data.teamCherrySection, true)
     let sectionLead = new Section(data.leadSection)
+    let divisory = new Divisory()
     mainContainer.appendChild(sectionCherry.getComponents())
+    mainContainer.appendChild(divisory.getComponents())
     mainContainer.appendChild(sectionLead.getComponents())
 }

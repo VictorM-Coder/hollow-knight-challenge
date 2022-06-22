@@ -18,6 +18,15 @@
     .d-grid-section{
         grid-template-columns: 1fr 1fr;
     } 
+
+    .first-column{
+        grid-column: 1;
+        grid-row: 1;
+    }
+    
+    .second-column{
+        grid-column: 2;
+    }
 }
 
 @media (max-width: 768px){
