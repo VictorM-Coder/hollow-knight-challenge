@@ -36,8 +36,14 @@ function changeSectionTo(type){
 function changeSectionToAboutUs(){
     let sectionCherry = new Section(data.teamCherrySection, true)
     let sectionLead = new Section(data.leadSection)
-    let divisory = new Divisory()
+    let divisory1 = new Divisory()
+    let divisory2 = new Divisory()
+    let sectionDevs = new SectionDevs(data.devs)
+
     mainContainer.appendChild(sectionCherry.getComponents())
-    mainContainer.appendChild(divisory.getComponents())
+    mainContainer.appendChild(divisory1.getComponents())
     mainContainer.appendChild(sectionLead.getComponents())
+    mainContainer.appendChild(divisory2.getComponents())
+    mainContainer.appendChild(sectionDevs.getComponents())
+    
 }
