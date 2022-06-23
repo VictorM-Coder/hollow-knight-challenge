@@ -1,6 +1,6 @@
-let btnHome = document.getElementById("home")
-let btnAboutUs = document.getElementById("about-us")
-let btnAdverts = document.getElementById("adverts")
+const btnHome = document.getElementById("home")
+const btnAboutUs = document.getElementById("about-us")
+const btnAdverts = document.getElementById("adverts")
 
 btnHome.addEventListener("click", () => {
     changeSectionTo("home")

@@ -36,7 +36,7 @@ class Menu extends Component{
             }
 
             li.classList.add("li-nav")
-            link.classList.add("link-nav", "btn-text")
+            link.classList.add("btn-text")
 
             if(index < array.length-1){
                 switch(this.type){
@@ -53,7 +53,9 @@ class Menu extends Component{
             }
 
             if(this.type == "accessibility"){
-                li.classList.add("btn-accessibility")
+                link.classList.add("btn-accessibility")
+            }else{
+                link.classList.add("link-nav")
             }
 
             li.appendChild(link)
