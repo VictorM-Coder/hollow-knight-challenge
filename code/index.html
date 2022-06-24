@@ -1,10 +1,12 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-br" style="font-size: 16px;">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hollow Knight</title>
+
+    <link rel="shortcut icon" href="_images/hollow-head.svg" type="image/x-icon">
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
 
@@ -18,80 +20,23 @@
     <link rel="stylesheet" href="_stylesheets/grid.css">
 </head>
 <body>
-    <header class="">
-        <div class="accessibility-bar bg-black container">
-            <ul class="ul-nav">
-                <li class="li-nav me-2 btn-accessibility"><a class="link-nav btn-text" href="">+A</a></li>
-                <li class="li-nav me-2 btn-accessibility"><a class="link-nav btn-text" href="">A</a></li>
-                <li class="li-nav btn-accessibility"><a class="link-nav btn-text" href="">-A</a></li>
-            </ul>
-        </div>
-
-        <nav class="navbar bg-secondary container d-flex justify-content-center align-items-center">
-            <ul class="ul-nav my-2">
-                <li class="li-nav me-4"><a class="link-nav btn-text" href="">Anúncios</a></li>
-                <li class="li-nav me-4"><a class="link-nav btn-text" href="">Home</a></li>
-                <li class="li-nav"><a class="link-nav btn-text" href="">Sobre nós</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <main class="container">
-        <section class="d-grid d-grid-section my-4 align-items-center">
-            <div class="align-self-center row-content">
-                <h1 class="h1-default color-white m-0">Enfrente as profundezas de um reino esquecido</h1>
-                <p class="p-display color-white mt-2 mb-3">Como o enigmático Cavaleiro, você atravessará as profundezas, desvendará seus mistérios e vencerá seus males.</p>
-                <button class="btn-default btn-text color-white"><i class="bi bi-steam icon me-1"></i> Baixe o jogo</button>
-            </div>
-
-            <div class="d-flex justify-content-center row-image">
-                <img class="img-fluid" src="_images/The_Knight.png" alt="">
-            </div>
-        </section>
-    </main>
 
 
-    <section class="d-flex justify-content-center align-items-center flex-wrap justify-content-around container">
-        <div class="person py-1 mb-3">
-            <div>
-                <img class="img-perfil" src="_images/artorius.webp" alt="">
-            </div>
-            <div class="text-center">
-                <p class="btn-text color-white">Victor Martins</p>
-                <p class="p-default color-white">mentorando</p>
-            </div>
-        </div>
-
-        <div class="person py-1 mb-3">
-            <div>
-                <img class="img-perfil" src="_images/artorius.webp" alt="">
-            </div>
-            <div class="text-center">
-                <p class="btn-text color-white">Victor Martins</p>
-                <p class="p-default color-white">mentorando</p>
-            </div>
-        </div>
-
-        <div class="person py-1 mb-3">
-            <div>
-                <img class="img-perfil" src="_images/artorius.webp" alt="">
-            </div>
-            <div class="text-center">
-                <p class="btn-text color-white">Victor Martins</p>
-                <p class="p-default color-white">mentorando</p>
-            </div>
-        </div>
-    </section>
-
-    <footer class="bg-secondary container d-grid d-grid-footer align-items-center">
-        <p class="col-center text-center p-default color-white">Copyright © 2022, Todos os direitos reservados</p>
-        <div class="d-flex justify-content-end">
-            <ul class="ul-nav">
-                <li class="li-nav me-2"><a class="link-nav btn-text" href=""><i class="bi bi-youtube icon"></i></a></li>
-                <li class="li-nav me-2"><a class="link-nav btn-text" href=""><i class="bi bi-twitter icon"></i></a></li>
-                <li class="li-nav"><a class="link-nav btn-text" href=""><i class="bi bi-facebook icon"></i></a></li>
-            </ul>
-        </div>
-    </footer>
 </body>
+<script src="_js/entities/dev.js"></script>
+<script src="_js/entities/section_content.js"></script>
+<script src="_js/entities/menu_content.js"></script>
+<script src="_js/components/icon/icon.js"></script>
+<script src="_data/data.js"></script>
+<script src="_js/components/component.js"></script>
+<script src="_js/components/divisory/divisory.js"></script>
+<script src="_js/components/section/section_devs.js"></script>
+
+<script src="_js/components/footer/footer.js"></script>
+<script src="_js/components/section/section.js"></script>
+<script src="_js/components/header/menu.js"></script>
+<script src="_js/components/header/header.js"></script>
+<script src="_js/app.js"></script>
+<script src="_js/controller.js"></script>
+<script src="_js/acessbility.js"></script>
 </html>

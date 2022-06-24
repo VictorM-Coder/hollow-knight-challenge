@@ -1,10 +1,8 @@
 class Menu extends Component{
     //centralizar os botões de acessibilidade
-    constructor(content = ['item', 'item', 'item'], type, ids){
+    constructor(menuContent){
         super()
-        this.items = content
-        this.type = type;
-        this.ids =ids
+        this.menuContent = menuContent
 
         this.menu = document.createElement('menu')
         this.#addItems()
@@ -21,45 +19,74 @@ class Menu extends Component{
     }
 
     #addItems(){
-        this.items.forEach((value, index, array) => {
+        switch(this.menuContent.type){
+            case "accessibility":
+                this.#addAccessibilityItems()
+                break
+            case "menu":
+                this.#addMenuItems()
+                break
+            case "footer":
+                this.#addFooterItems()
+                break
+        }
+    }
+
+    #addAccessibilityItems(){
+        this.menuContent.items.forEach((value, index, array) => {
             let li = document.createElement('li')
-            let link = document.createElement('a')
+            li.innerHTML = value
             
-            if(typeof(value) === "string"){
-                link.innerHTML = value
-            }else if(typeof(value) === "object"){
-                link.appendChild(value)
-            }
-            
-            if(this.ids != undefined){
-                link.id = this.ids[index]
-            }
+            li.id = this.menuContent.ids[index]
 
             li.classList.add("li-nav")
-            link.classList.add("btn-text")
+            li.classList.add("btn-text")
+            li.classList.add("btn-accessibility")
 
-            if(index < array.length-1){
-                switch(this.type){
-                    case "accessibility":
-                        li.classList.add("me-2")
-                        break
-                    case "menu":
-                        li.classList.add("me-4")
-                        break
-                    case "footer":
-                        li.classList.add("me-2")
-                        break
-                }
+            if(index < array.length-1){    
+                li.classList.add("me-2")
             }
 
-            if(this.type == "accessibility"){
-                link.classList.add("btn-accessibility")
-            }else{
-                link.classList.add("link-nav")
+            this.menu.appendChild(li)
+        });
+    }
+
+    #addFooterItems(){
+        this.menuContent.items.forEach((value, index, array) => {
+            let li = document.createElement('li')
+            let link = document.createElement('a')
+
+            link.appendChild(value)
+            link.href = this.menuContent.links[index]
+            link.target = "_blank"
+
+            li.classList.add("li-nav")
+            link.classList.add("btn-text", "link-nav")
+
+            if(index < array.length-1){
+                li.classList.add("me-2")  
             }
 
             li.appendChild(link)
             this.menu.appendChild(li)
         });
     }
+
+    #addMenuItems(){
+        this.menuContent.items.forEach((value, index, array) => {
+            let li = document.createElement('li')
+            li.innerText = value
+
+            li.id = this.menuContent.ids[index]
+            li.classList.add("li-nav", "btn-text", "link-nav")
+
+            if(index < array.length-1){
+                li.classList.add("me-4")     
+            }
+
+            this.menu.appendChild(li)
+        });
+    }
+
+    
 }

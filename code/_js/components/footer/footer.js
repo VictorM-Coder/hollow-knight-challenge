@@ -5,7 +5,7 @@ class Footer extends Component{
         this.paragraph = document.createElement('p')
         this.divMenu = document.createElement('div')
 
-        let menu =  new Menu([getIconFromBootstrap("youtube"), getIconFromBootstrap("twitter"), getIconFromBootstrap("facebook")], "footer")
+        let menu =  new Menu(data.menuFooter)
         this.footerMenu =  menu.getComponents()
 
         this.footer.appendChild(this.paragraph)

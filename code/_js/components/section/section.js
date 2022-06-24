@@ -9,7 +9,7 @@ class Section extends Component{
         this.paragraph = document.createElement('p')
         this.button =  document.createElement('button')
 
-        this.icon = getIconFromBootstrap(content.buttonIcon)
+        this.icon = getIcon(content.buttonIcon)
 
         this.span = document.createElement('span')
 
@@ -31,6 +31,10 @@ class Section extends Component{
         this.span.innerText = content.buttonText
         this.title.innerText = content.title
         this.paragraph.innerText = content.paragraph
+
+        this.button.addEventListener('click', () =>{
+            window.open(content.link, "_blank")
+        })
 
         this.stylizeComponents()
     }

@@ -1,6 +1,9 @@
 const btnHome = document.getElementById("home")
 const btnAboutUs = document.getElementById("about-us")
 const btnAdverts = document.getElementById("adverts")
+let activeMenu = btnHome
+
+activeMenu.classList.add("link-active")
 
 btnHome.addEventListener("click", () => {
     changeSectionTo("home")
@@ -20,14 +23,17 @@ function changeSectionTo(type){
     switch(type){
         case "home":
             newSection = new Section(data.homeSection)
+            changeActive(btnHome)
             break
         case "adverts":
             newSection = new Section(data.advertsSection, true)
+            changeActive(btnAdverts)
             break
         case "about-us":
             changeSectionToAboutUs()
+            changeActive(btnAboutUs)
             return
-    break
+        break
     }
 
     mainContainer.appendChild(newSection.getComponents())
@@ -44,6 +50,11 @@ function changeSectionToAboutUs(){
     mainContainer.appendChild(divisory1.getComponents())
     mainContainer.appendChild(sectionLead.getComponents())
     mainContainer.appendChild(divisory2.getComponents())
-    mainContainer.appendChild(sectionDevs.getComponents())
-    
+    mainContainer.appendChild(sectionDevs.getComponents())   
+}
+
+function changeActive(item){
+    activeMenu.classList.remove("link-active")
+    activeMenu = item
+    activeMenu.classList.add("link-active")
 }
