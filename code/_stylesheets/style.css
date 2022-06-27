@@ -115,3 +115,12 @@ body{
     border-radius: 1px;
     border: none;
 }
+
+
+@media (min-width: 1656px) {
+    .absolute-footer-lg{
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+    }
+}
