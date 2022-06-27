@@ -119,7 +119,7 @@ body{
 
 @media (min-width: 1656px) {
     .absolute-footer-lg{
-        position: absolute;
+        position: fixed;
         bottom: 0;
         width: 100%;
     }
