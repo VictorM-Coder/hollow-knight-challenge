@@ -1,6 +1,9 @@
 const btnHome = document.getElementById("home")
 const btnAboutUs = document.getElementById("about-us")
 const btnAdverts = document.getElementById("adverts")
+
+//resolve bug vercel
+btnAdverts.style.display = 'block'
 let activeMenu = btnHome
 
 activeMenu.classList.add("link-active")
