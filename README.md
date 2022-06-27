@@ -6,7 +6,7 @@
 <div align="center">
   <br><br>
   
-   ## 💻 **Acesse o Site [aqui](https://vercel.com/victorm-coder/hollow-knight/74bctSMDUZ5ezuMEMrr1cH42UJUc)** 💻
+   ## 💻 **Acesse o Site [aqui](https://hollow-knight-challenge.vercel.app)** 💻
   <img src="screencapture-hollow-knight-challenge.png"/>
 </div>
 
