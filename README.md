@@ -19,7 +19,7 @@
 
 ## 💡 Sobre o Projeto
 
-Este site foi pensado durante o **Lead Mentoring*, projeto da [LeadDell](https://leadfortaleza.com.br/portal), como forma de praticar conceitos básicos de JavaScript, HTML, CSS e acessibilidade na web. Como forma de práticar a manipulação do DOM todos os componentes de conteúdo da páginas foram gerados via JavaScript. Além disso, Tendo em vista usuário com problemas de visão, foi implementado um mecanismo de modificação do tamanho da fonte via uma barra de acessibilidade no topo do site.
+Este site foi pensado durante o *Lead Mentoring*, projeto da [LeadDell](https://leadfortaleza.com.br/portal), como forma de praticar conceitos básicos de JavaScript, HTML, CSS e acessibilidade na web. Como forma de práticar a manipulação do DOM todos os componentes de conteúdo da páginas foram gerados via JavaScript. Além disso, Tendo em vista usuário com problemas de visão, foi implementado um mecanismo de modificação do tamanho da fonte via uma barra de acessibilidade no topo do site.
 </br></br>
 ## 🚀 Tecnologias utilizadas
 
